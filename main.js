@@ -29,15 +29,12 @@ next:function() {
 // if (imageIndex === -1) {
 //   this.image.length === 0
 // }
-if (this.imageIndex === image.length - 1)
-  this.imageIndex ===  0
+if (this.imageIndex === image.length - 1) {this.imageIndex =  0}
 },
 
 previous:function() {
   this.imageIndex-=1;
-  if (this.imageIndex === 0)
-  this.imageIndex === image.length - 1
-
+  if(this.imageIndex === 0) {this.imageIndex = image.length - 1}
 
 }
 
