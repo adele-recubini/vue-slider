@@ -27,22 +27,27 @@ methods:{
 next:function() {
   this.imageIndex +=1;
 // if (imageIndex === -1) {
-//   image.length === 0
+//   this.image.length === 0
 // }
+if (this.imageIndex === image.length - 1)
+  this.imageIndex ===  0
 },
 
 previous:function() {
   this.imageIndex-=1;
+  if (this.imageIndex === 0)
+  this.imageIndex === image.length - 1
+
 
 }
 
 },
 
-computed: {
-    currentImg: function() {
-      return this.image[Math.abs(this.imageIndex) % this.image.length];
-    }
-  }
+// computed: {
+//     currentImg: function() {
+//       return this.image[Math.abs(this.imageIndex) % this.image.length];
+//     }
+//   }
 
 
 });
