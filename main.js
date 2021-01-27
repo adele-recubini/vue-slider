@@ -9,21 +9,35 @@ var app = new Vue({
 
    "https://static.photocdn.pt/images/articles/2017/04/28/iStock-546424192.jpg",
  ],
+ circle:[
+   "fas fa-circle",
+   "fas fa-circle",
+   "fas fa-circle",
+   "fas fa-circle",
+ ],
+
+
 
  imageIndex: 0,
+ circleIndex:0,
 
  },
 methods:{
 
 next:function() {
   this.imageIndex +=1;
+// if (imageIndex === -1) {
+//   image.length === 0
+// }
 },
 
 previous:function() {
   this.imageIndex-=1;
+
 }
 
 },
+
 computed: {
     currentImg: function() {
       return this.image[Math.abs(this.imageIndex) % this.image.length];
