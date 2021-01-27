@@ -9,32 +9,33 @@ var app = new Vue({
 
    "https://static.photocdn.pt/images/articles/2017/04/28/iStock-546424192.jpg",
  ],
- circle:[
-   "fas fa-circle",
-   "fas fa-circle",
-   "fas fa-circle",
-   "fas fa-circle",
- ],
 
 
 
  imageIndex: 0,
+
  circleIndex:0,
 
  },
 methods:{
 
 next:function() {
-  this.imageIndex +=1;
+//   this.imageIndex +=1;
 // if (imageIndex === -1) {
 //   this.image.length === 0
 // }
-if (this.imageIndex === image.length - 1) {this.imageIndex =  0}
+console.log('next');
+console.log(this.imageIndex);
+this.imageIndex +=1;
+if (this.imageIndex == this.image.length)
+{this.imageIndex =  0}
+
+
 },
 
 previous:function() {
   this.imageIndex-=1;
-  if(this.imageIndex === 0) {this.imageIndex = image.length - 1}
+  if(this.imageIndex < 0) {this.imageIndex = this.image.length - 1}
 
 }
 
