@@ -22,6 +22,7 @@
 
                 <!-- <div v-for="i in [imageIndex]" :key="i"> -->
                    <img :src="image[imageIndex]">
+
                     <!-- <img :src="currentImg">
                </div> -->
 
@@ -31,11 +32,13 @@
                   </div>
                  </div>
 
+
+
                 <div class="nav">
-                    <i class="fas fa-circle active first"></i>
+                    <i class="fas fa-circle"v-bind:class="active"></i>
                     <i class="fas fa-circle"></i>
                     <i class="fas fa-circle"></i>
-                    <i class="fas fa-circle last"></i>
+                    <i class="fas fa-circle"></i>
                 </div>
             </div>
         </div>
