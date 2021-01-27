@@ -31,6 +31,7 @@ if (this.imageIndex === this.image.length)
 {this.imageIndex =  0}
 },
 
+
 previous:function() {
   console.log('previous');
   console.log(this.imageIndex);
@@ -48,5 +49,8 @@ previous:function() {
 
 
 });
+
+
+
 
 Vue.config.devtools = true;
