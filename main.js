@@ -18,12 +18,17 @@ methods:{
 next:function() {
   this.imageIndex +=1;
 },
-prev:function() {
+
+previous:function() {
   this.imageIndex-=1;
 }
 
-
-}
+},
+computed: {
+    currentImg: function() {
+      return this.image[Math.abs(this.imageIndex) % this.image.length];
+    }
+  }
 
 
 });

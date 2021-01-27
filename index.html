@@ -20,12 +20,16 @@
                 </div>
 
 
+                <div v-for="i in [imageIndex]" :key="i">
+                   <!-- <img :src="image[imageIndex]"> -->
+                    <img :src="currentImg">
+              </div>   
 
-                   <img :src="image[imageIndex]" style="width:50%;">
-
-                <div @click="prev">
+                <div @click="previous">
+                   <div class="prev">
                     <i class="fas fa-angle-right"></i>
-                </div>
+                  </div>
+                 </div>
 
                 <div class="nav">
                     <i class="fas fa-circle active first"></i>
