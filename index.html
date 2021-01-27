@@ -11,23 +11,22 @@
     </head>
     <body>
 
-
+       <div id="root">
         <div class="container">
             <div class="slider-wrapper">
-                <div class="prev">
+
+                <div @click="next">
                     <i class="fas fa-angle-left"></i>
                 </div>
 
 
-                <div id="root">
-                   <img :src="image">        
-                </div>
 
+                   <img :src="image[imageIndex]" style="width:50%;">
 
-
-                <div class="next">
+                <div @click="prev">
                     <i class="fas fa-angle-right"></i>
                 </div>
+
                 <div class="nav">
                     <i class="fas fa-circle active first"></i>
                     <i class="fas fa-circle"></i>
@@ -37,7 +36,7 @@
             </div>
         </div>
 
-
+  </div>
         <script src="main.js"></script>
     </body>
 </html>

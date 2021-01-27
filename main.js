@@ -8,10 +8,19 @@ var app = new Vue({
    "https://cdn.mos.cms.futurecdn.net/FUE7XiFApEqWZQ85wYcAfM.jpg",
 
    "https://static.photocdn.pt/images/articles/2017/04/28/iStock-546424192.jpg",
+ ],
 
- ]
+ imageIndex: 0,
+
  },
 methods:{
+
+next:function() {
+  this.imageIndex +=1;
+},
+prev:function() {
+  this.imageIndex-=1;
+}
 
 
 }
