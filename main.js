@@ -9,9 +9,7 @@ var app = new Vue({
 
    "https://static.photocdn.pt/images/articles/2017/04/28/iStock-546424192.jpg",
  ],
- circle:[
-   '<i class="fas fa-circle"></i>'
- ],
+
 imageIndex: 0,
 circleIndex:0,
 active:'color',
@@ -32,9 +30,6 @@ this.imageIndex +=1;
 if (this.imageIndex === this.image.length)
 {this.imageIndex =  0}
 },
-
-
-
 
 previous:function() {
   console.log('previous');
